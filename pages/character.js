@@ -23,7 +23,7 @@ class CharacterPage extends Component {
               <Link route="index">
                 <a>Back to home</a>
               </Link>
-              <h1>Charactername: {character.name}</h1>
+              <h1>Charactername: {(character.name) ? character.name : null}</h1>
             </div>
             <Counter />
           </div>
