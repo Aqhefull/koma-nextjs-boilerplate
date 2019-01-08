@@ -1,0 +1,26 @@
+input[type="submit"], input[type="reset"], input[type="button"], button, .button 
+  border: 1px solid #fff
+  color: #fff
+  align-items: center
+  cursor: pointer
+  background-color: transparent
+  display: inline-flex
+  font-size: 1em
+  font-weight: 500
+  height: 40px
+  line-height: 1
+  padding: 0 16px 1px
+  text-transform: uppercase
+  transition: background .1s cubic-bezier(.4,0,.2,1)
+  &:hover
+    border: 1px solid $blue
+    color: $blue
+  .active
+    &:active 
+      background-color: $blue
+      border: 1px solid $blue
+      color: $black
+  .disabled
+    &:disabled 
+      cursor: default
+      opacity: 0.25
