@@ -19,7 +19,7 @@ class Layout extends Component {
           <meta property="og:site_name" content="Next.js starter" />
           <meta property="og:image" content="" />
           <meta property="og:image:secure_url" content="" />
-          <link rel="shortcut icon" href="" type="image/x-icon" />
+          <link rel="shortcut icon" href="/static/favicon/favicon.svg" type="image/x-icon" />
           <link rel="apple-touch-icon" href="" />
           <link rel="apple-touch-icon" sizes="72x72" href="" />
           <link rel="apple-touch-icon" sizes="114x114" href="" />

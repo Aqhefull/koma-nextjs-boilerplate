@@ -13,13 +13,8 @@ router.add({
 });
 
 router.add({
-  name: "film",
-  pattern: "/films/:id"
-});
-
-router.add({
-  name: "character-and-film",
-  pattern: "/character-and-film/:characterId/:filmId"
+  name: "nomatch",
+  pattern: "/*"
 });
 
 module.exports = router;

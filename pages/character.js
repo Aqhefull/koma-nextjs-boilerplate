@@ -16,20 +16,20 @@ class CharacterPage extends Component {
   render() {
     const { character } = this.props
     return (
-      <Layout>
-        <div className="character">
-          <div className="character__container">
-            <div style={{ padding: "20px 0" }}>
-              <Link route="index">
-                <a>Back to home</a>
-              </Link>
-              <h1>Charactername: {(character.name) ? character.name : null}</h1>
+        (character) ? <Layout>
+          <div className="character">
+            <div className="character__container">
+              <div style={{ padding: "20px 0" }}>
+                <Link route="index">
+                  <a>Back to home</a>
+                </Link>
+                <h1>Charactername: {(character.name) ? character.name : null}</h1>
+              </div>
+              <Counter />
             </div>
-            <Counter />
           </div>
-        </div>
-      </Layout>
-    );
+        </Layout> : null
+    )
   }
 }
 const mapStateToProps = (state) => ({
